@@ -1,6 +1,19 @@
+# BOX
+
+vagrant box list           (listar)
+vagrant box add [nome-box] (adicionar box)
+
+# GERENCIAMENTO DE BOX
+
+vagrant box -h                (help)
+vagrant box prune             (remover box versões antigas)
+vagrant box outdated          (verificar box desatualizadas)
+vagrant box remove [nome-box] (remover box)
+
 # CRIAR VAGRANTFILE
+
 vagrant init [nome-box]
-vagrant init centos/7
+vagrant init ubuntu/trusty64
 
 # CRIAR VM
 vagrant up
@@ -8,7 +21,15 @@ vagrant up
 # CONECTAR VM
 vagrant ssh
 
-# DESLIGAR | SUSPENDER |
-vagrant halt
-vagrant suspend
+# GERENCIAMENTO DE VM
+vagrant up          (iniciar)
+vagrant halt        (desligar)
+vagrant suspend     (suspender)
+vagrant status      (status)
+vagrant reload      (reiniciar)
+vagrant destroy     (destruir)
 
+# UPLOAD ARQUIVOS
+
+vagrant upload -h (help)
+vagrant upload [arquivo/diretorio] [destino
