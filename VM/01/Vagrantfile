@@ -2,6 +2,15 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
+  
+  #Configurações de Disco
+  config.disksize.size = "40960MB"
+
+  #NAT
+  #config.vm.network "private_network", type: "dhcp"
+
+  #BRIGE
+  config.vm.network "public_network", bridge: "enp1s0f1"
 
   #Configurações de Hardware
   config.vm.provider "virtualbox" do |vb|
