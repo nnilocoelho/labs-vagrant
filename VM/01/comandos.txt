@@ -1,0 +1,14 @@
+# CRIAR VAGRANTFILE
+vagrant init [nome-box]
+vagrant init centos/7
+
+# CRIAR VM
+vagrant up
+
+# CONECTAR VM
+vagrant ssh
+
+# DESLIGAR | SUSPENDER |
+vagrant halt
+vagrant suspend
+
