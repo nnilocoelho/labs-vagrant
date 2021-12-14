@@ -1,5 +1,12 @@
-#CRIAR VM CentOS 7
+#VM CentOS 7
 
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
+
+  #Configurações de Hardware
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 512
+    vb.cpus = 2
+    vb.name = "centos7-lab"
+  end
 end
