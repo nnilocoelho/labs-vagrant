@@ -2,7 +2,6 @@
 # vi: set ft=ruby :
 
 # MULTI VMS
-
 Vagrant.configure("2") do |config|
   (1..2).each do |i|
     config.vm.define "graylog_#{i}" do |mongo|
