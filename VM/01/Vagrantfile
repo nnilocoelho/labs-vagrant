@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
   
   #Configurações de Disco
-  config.disksize.size = "40960MB"
+  config.disksize.size = '10GB'
 
   #NAT
   #config.vm.network "private_network", type: "dhcp"

@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   (1..2).each do |i|
     config.vm.define "graylog_#{i}" do |mongo|
       mongo.vm.box = "centos/7"
-      mongo.vm.network "public_network", bridge: "wlp2s0"
+      mongo.vm.network "public_network", bridge: "enp1s0f1"
     end
   end
 end
