@@ -1,2 +1,3 @@
 # ignora quaisquer diretórios chamados "vagrant"
 .vagrant/
+.log
